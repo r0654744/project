@@ -53,7 +53,7 @@ INSERT INTO `inventory` (`id`, `item`, `qtyleft`, `qty_sold`, `price`, `sales`) 
 --
 
 CREATE TABLE IF NOT EXISTS `sales` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
   `qty` int(11) NOT NULL,
   `date` varchar(30) NOT NULL,
