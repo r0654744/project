@@ -7,8 +7,8 @@
 -- Server version: 5.1.36
 -- PHP Version: 5.3.0
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+--SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+--SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `inventory` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL,
   `item` varchar(100) NOT NULL,
   `qtyleft` int(11) NOT NULL,
   `qty_sold` int(11) NOT NULL,
@@ -83,7 +83,7 @@ INSERT INTO `sales` (`id`, `product_id`, `qty`, `date`, `sales`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `user` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL,
   `username` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
@@ -98,6 +98,3 @@ INSERT INTO `user` (`id`, `username`, `password`) VALUES
 (10, 'febe', '9f51ce8e8e4374fd0736f3ece4a679dc'),
 (9, 'argie', '6cf51b9070c74b2b7b90a24428e9a99b');
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
