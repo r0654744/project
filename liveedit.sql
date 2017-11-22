@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `price` int(11) NOT NULL,
   `sales` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+);
 
 --
 -- Dumping data for table `inventory`
@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS `sales` (
   `date` varchar(30) NOT NULL,
   `sales` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+);
 
 --
 -- Dumping data for table `sales`
@@ -87,7 +87,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `username` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+);
 
 --
 -- Dumping data for table `user`
