@@ -1,7 +1,7 @@
 <h1>Docenten</h1>
 
 <?php
-$db = new mysqli('database', 'root', 'root', 'demodb');
+$db = new mysqli('http://172.18.0.3', 'root', 'root', 'demodb');
 
 if($db->connect_errno > 0) {
    die('Unable to connect to database [' . $db->connect_error . ']');
