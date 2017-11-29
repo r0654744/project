@@ -1,5 +1,5 @@
 CREATE DATABASE `demodb`;
-USE `demodb`;
+USE demodb;
 
 CREATE TABLE IF NOT EXISTS `docenten` (
   `id` int(11) NOT NULL,
