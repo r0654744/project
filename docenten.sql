@@ -1,3 +1,6 @@
+CREATE DATABASE `demodb`;
+USE `demodb`;
+
 CREATE TABLE IF NOT EXISTS `docenten` (
   `id` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
